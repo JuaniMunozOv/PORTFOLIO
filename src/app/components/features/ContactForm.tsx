@@ -14,9 +14,9 @@ import emailjs from '@emailjs/browser';
 export function SignupFormDemo() {
 
   const [message, setMessage] = useState({ text: '', type: '' });
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.target as HTMLFormElement;
+    const form = e.currentTarget;  // Use currentTarget instead of target for type safety
 
     emailjs.sendForm('service_9p0h2vg', 'template_92dwtij', form, 'rk9r69F631ngQrJrs')
       .then((result) => {
