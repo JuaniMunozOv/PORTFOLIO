@@ -45,7 +45,7 @@ export function SignupFormDemo() {
           </LabelInputContainer>
           <LabelInputContainer>
             <Label htmlFor="message" className="text-white">Message</Label>
-            <Input id="message" name="message" placeholder="Write your message here" as="textarea" className="h-32 text-black" required />
+            <Input id="message" name="message" placeholder="Write your message here" className="h-32 text-black" required />
           </LabelInputContainer>
 
           <button
