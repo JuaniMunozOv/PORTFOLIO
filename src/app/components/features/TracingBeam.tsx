@@ -7,7 +7,7 @@ import { AnimatedTooltipPreview } from "./AnimatedTool";
 
 export function TracingBeamDemo() {
   return (
-    <TracingBeam className="px-30">
+    <TracingBeam className="px-30 bg-black">
       <div className="max-w-xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
