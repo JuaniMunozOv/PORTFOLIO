@@ -7,23 +7,23 @@ import { AnimatedTooltipPreview } from "./AnimatedTool";
 
 export function TracingBeamDemo() {
   return (
-    <TracingBeam className="px-30 bg-black">
-      <div className="max-w-xl mx-auto antialiased pt-4 relative">
+    <TracingBeam className="px-10 sm:px-10 md:px-30 bg-black">
+      <div className="max-w-xl mx-auto antialiased pt-8 relative">
         {dummyContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10">
+          <div key={`content-${index}`} className="mb-5 sm:mb-8 md:mb-10">
 
-            <p className={twMerge("text-xl mb-30")}>
+            <p className={twMerge("text-xl mb-10 sm:mb-8 md:mb-30")}>
               {item.title}
             </p>
 
-            <div className="text-sm  prose prose-sm dark:prose-invert">
+            <div className="text-sm prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}
                   alt="blog thumbnail"
                   height="1000"
                   width="1000"
-                  className="rounded-lg mb-10 object-cover"
+                  className="rounded-lg mb-5 sm:mb-8 md:mb-10 object-cover"
                 />
               )}
               {item.description}
